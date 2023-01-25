@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.foodyapp.databinding.ActivityMainBinding
@@ -24,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
          navController = findNavController(R.id.nav_host_fragment_content_main)
-        appBarConfiguration = AppBarConfiguration(setOf(R.id.ReciepeFragment,R.id.FavoritesFragment,R.id.foodJokeFragment))
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.RecipeFragment,R.id.FavoritesFragment,R.id.foodJokeFragment))
 
         binding.bottomNavigationView.setupWithNavController(navController)
 //        setupActionBarWithNavController(navController, appBarConfiguration)

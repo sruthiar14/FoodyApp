@@ -1,19 +1,18 @@
 package com.example.foodyapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.foodyapp.databinding.FragmentReciepeBinding
+import androidx.fragment.app.Fragment
+import com.example.foodyapp.databinding.FragmentRecipeBinding
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
  */
-class ReciepeFragment : Fragment() {
+class RecipeFragment : Fragment() {
 
-    private var _binding: FragmentReciepeBinding? = null
+    private var _binding: FragmentRecipeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,7 +23,7 @@ class ReciepeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentReciepeBinding.inflate(inflater, container, false)
+        _binding = FragmentRecipeBinding.inflate(inflater, container, false)
         return binding.root
 
     }

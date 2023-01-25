@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightGray"
-    tools:context=".ReciepeFragment">
+    tools:context=".RecipeFragment">
 
     <TextView
         android:id="@+id/textview_first"
